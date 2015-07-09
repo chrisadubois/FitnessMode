@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="en">
+<meta charset="UTF-8">
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.js
+    //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.css
+    //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.print.css
+
 </head>
 
 <div data-role="page" class="" id="mainPage">
     <div data-role="header" class="">
         <h1>FitnessMode</h1>
     </div>
+
+
+
     <div data-role="content" class="">
         <ul data-role="listview" class="">
-            <li><a href="" class="ui-btn">Clipboard</a></li>
+            <li><a href="#clipboardPage" class="ui-btn">Clipboard</a></li>
             <li><a href="" class="ui-btn">Macrotracker</a></li>
             <li><a href="" class="ui-btn">Analytics</a></li>
         </ul>
     </div>
-    <div data-role="footer" class="">
-        <h1>Last Updated 7/2/2015</h1>
-    </div>
+    <div data-role="navbar" data-role="footer">
+        <ul>
+            <li><a href="#aboutPage">About</a></li>
+            <li><a href="#mainPage">Fitness Mode</a></li>
+            <li><a href="#howToPage">How To</a></li>
+        </ul>
+    </div><!-- /navbar -->
 </div>
 
 <div data-role="page" class="" id="aboutPage">
     <h1>About Us!</h1>
 </div>
+
+<div data-role="page" class="" id="howToPage">
+    <h1>How to use Fitness Mode</h1>
+</div>
+
+<div data-role="page" class="" id="clipboardPage">
+    <h1>Welcome to Clipboard!</h1>
+    <div data-role="content" class="">
+        <ul data-role="listview" class="">
+            <li><a href="" class="ui-btn">Create a Routine</a></li>
+            <li><a href="" class="ui-btn">Start a Workout</a></li>
+        </ul>
+    </div>
+
+    <div data-role="navbar" data-role="footer">
+        <ul>
+           <li><a href="#" onclick="history.go(-1)">Back</a></li>
+            <li><a href="">Fitness Mode</a></li>
+            <li><a href="">Main Page</a></li>
+        </ul>
+    </div><!-- /navbar -->
+
+</div>
+
 
 </html>
