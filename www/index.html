@@ -2,13 +2,15 @@
 <html>
 <head lang="en">
 <meta charset="UTF-8">
+<title>Fitness Mode</title>
+
+<link href="makeworkoutform.css" rel="stylesheet">
+
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.js
-    //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.css
-    //cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.print.css
+<script src="js/makeworkoutform.js"></script>
 
 </head>
 
@@ -16,8 +18,6 @@
     <div data-role="header" class="">
         <h1>FitnessMode</h1>
     </div>
-
-
 
     <div data-role="content" class="">
         <ul data-role="listview" class="">
@@ -47,7 +47,7 @@
     <h1>Welcome to Clipboard!</h1>
     <div data-role="content" class="">
         <ul data-role="listview" class="">
-            <li><a href="" class="ui-btn">Create a Routine</a></li>
+            <li><a href="#makeRoutine" class="ui-btn">Create a Routine</a></li>
             <li><a href="" class="ui-btn">Start a Workout</a></li>
         </ul>
     </div>
@@ -56,10 +56,48 @@
         <ul>
            <li><a href="#" onclick="history.go(-1)">Back</a></li>
             <li><a href="">Fitness Mode</a></li>
-            <li><a href="">Main Page</a></li>
+            <li><a href="#mainPage">Main Page</a></li>
         </ul>
     </div><!-- /navbar -->
+</div>
 
+<div data-role="page" class="" id="makeRoutine">
+    <h1>Make a Routine</h1>
+    <div data-role="content" class="">
+        <ul data-role="listview" class="">
+            <li><a href="#createRoutine" class="ui-btn">Create a New Routine</a></li>
+            <li data-role="collapsible" data-collapsed-icon="false" data-expanded-icon="false" data-inset="true">
+                <h2>Routine List</h2>
+                <ul data-role="listview"></ul>
+            </li>
+        </ul>
+    </div>
+        <div data-role="navbar" data-role="footer">
+            <ul>
+                <li><a href="#" onclick="history.go(-1)">Back</a></li>
+                <li><a href="">Fitness Mode</a></li>
+                <li><a href="#mainPage">Main Page</a></li>
+            </ul>
+        </div><!-- /navbar -->
+    </div>
+</div>
+
+<div data-role="page" class="" id="createRoutine">
+    <h1>Create Your New Routine</h1>
+        <div id="container">
+            <div id="makeWorkoutForm">
+                <!--DYNAMIC WORKOUT FORM DIV -->
+            </div>
+        </div>
+
+
+    <div data-role="navbar" data-role="footer">
+        <ul>
+            <li><a href="#" onclick="history.go(-1)">Back</a></li>
+            <li><a href="">Fitness Mode</a></li>
+            <li><a href="#mainPage">Main Page</a></li>
+        </ul>
+    </div><!-- /navbar -->
 </div>
 
 
